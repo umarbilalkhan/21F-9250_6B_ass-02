@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pizza Delight</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <h3 class="heading">Pizza Delight</h3>
+        
+        <img src="../fire.png" alt="fire-logo" class="fire-logo" width="8%" height="8%"/>
+      </div>
+      <nav>
+        <ul>
+          <a href="#" style="color: white;"><li>Menu</li></a>
+          <a href="#"></a><li>Specials</li></a>
+          <a href="#"></a><li>Order Online</li></a>
+          <a href="#"></a><li>Contact</li></a>
+        </ul>
+        <img src="../cart.webp" alt="Pizza-logo" class="pizza-logo" width="10%" height="10%"/>
+      </nav>
+    </header>
+
+    
+    <section class="slider">
+
+    </section>
+
+    <section class="pizza-specials">
+      <h1>Today's Special</h1>
+      <div class="cards">
+        <div class="card">
+          <img src="../pizza.jpg" alt="pizza-logo" width="70%" height="70%" />
+          <p>Supreme Pizza</p>
+        </div>
+        <div class="card">
+          <img src="../pizza.jpg" alt="pizza-logo" width="70%" height="70%" />
+          <p>Margherita Pizza</p>
+        </div>
+        <div class="card">
+          <img src="../pizza.jpg" alt="pizza-logo" width="70%" height="70%" />
+          <p>Vaggie Delight Pizza</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="testimonials">
+        <h1>What Our Customers Say</h1><br><br>
+            <strong><i> "The best pizza in town! I can't get enough delicious crust and fresh toppings."</i></strong><br>
+            -John D <br><br>
+            <strong><i>"Pizza Delight never disappoints. Quick delivery and mouth-watering flavors. Highly recommended."</strong></i><br>
+            -Sarah <br><br>
+
+    <section class="cta">
+      <h1>Ready to Order!</h1><br>
+      <p><strong><i>Experience the taste of perfection. Order now and enjoy a delightful pizza and expirience!</i></strong>
+      </p>
+      <button type="button" class="btn">Submit Order</button>
+    </section>
+
+
+    <section class="three-columns">
+      <div class="col">
+        <h3>Quality Ingredients</h3><br>
+        <p> We use only the finest and freshest ingridents to craft our diliciouspizza.</p>
+      </div>
+      <div class="col">
+        <h3>Customization options</h3><br>
+        <p>
+          Customize your pizza with a variety of toppings souces and crust
+          options to suit your taste.
+        </p>
+      </div>
+      <div class="col">
+        <h3>Quality Ingredients</h3><br>
+        <p>
+          Enjoy quick and reliable dilivery services to savor your pizza at its
+          best.
+        </p>
+      </div>
+    </section>
+
+
+
+    <section class="contact-form">
+      <form action="/submitForm" method="post">
+        <h1 style="text-align: center;">Contact Us</h1><br>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required placeholder="Umar Bilal">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required placeholder="umar@example.com">
+        <label for="phone">Your Phone Number</label>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" required rows="4" placeholder="Type your message here..."></textarea>
+
+        <div class="btn">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </div>
+    </form>
+    </section>
+
+
+    <footer> 2024 Pizza Delight. All rights reserved</footer>
+</body>
+</html>
