@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Task 3</title>
+    </head>
+    <link rel="stylesheet" href="task3.css">
+    <body>
+        <div>
+        <form action="/submitForm" method="post">
+        <h1 style="text-align: center;">Contact Us</h1>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required placeholder="Umar Bilal">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required placeholder="umar@example.com">
+        <label for="phone">Your Phone Number</label>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" required rows="4" placeholder="Type your message here..."></textarea>
+        
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</div>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 8</title>
+        <style>
+            * {
+                text-align: center;
+                font-family: 'Courier New', Courier, monospace;
+            }
+        </style>
+    </head>
+<body>
+<h1><u>Form</u></h1>
+<p>Input is required in all the fields</p>
+<form action="/action_page.php" method="post">
+<label for="username">Username:</label><br>
+<input type="text" id="username" name="username" required><br>
+<label for="Email">Email:</label><br>
+<input type="email" id="Email" name="Email" required><br>
+<label for="pwd">Password:</label><br>
+<input type="password" id="pwd" name="pwd" required><br>
+<label for="confirm_password">confirm-password:</label><br>
+<input type="password" name="confirm_password" id="confirm_password"><br><br>
+
+<input type="submit" value="Submit">
+<input type="reset" value="reset">
+</form>
+</body>
+</html>
