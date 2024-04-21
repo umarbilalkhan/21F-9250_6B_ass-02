@@ -1,163 +1,256 @@
-*{
-        scroll-behavior: smooth;
-    }
-    body{
-        margin: 0%;
-        padding: 0%;
-        overflow-x: hidden;
-    }
-    .nav-link:hover {
-        color: #0f3f67 !important; 
-        transition: 0.4s;
-        transform: scale(1.03);
-    }
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+
+.navbar {
+    color: #ffffff;
+}
+
+.navbar-toggler-icon {
+    background-color: #000000;
+}
+
+.navbar-nav .nav-link {
+    color: #000000;
+    font-weight: 400;
+    font-size: x-large;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-div {
+    flex: 1;
+    padding: 20px;
+}
+
+.right-div {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.img1 {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.Projects {
+    text-align: center;
+    padding: 20px;
+}
+
+.span1 {
+    color: #0f3f67;
+}
+
+.custom-btn {
+    background-color: #0f3f67 !important;
+    border-color: #0f3f67 !important;
+    color: #ffffff !important;
+}
+
+.custom-btn:hover {
+    background-color: #0c324f !important;
+    border-color: #0c324f !important;
+}
+
+.card img:hover {
+    transition: 0.4s;
+    transform: scale(1.03);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h2.section-title {
+    color: #333;
+    margin-top: 0;
+}
+
+.item {
+    margin-bottom: 20px;
+}
+
+.item h3 {
+    margin-top: 0;
+}
+
+.item p {
+    margin-bottom: 5px;
+}
+
+.form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form label {
+    font-weight: bold;
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus {
+    outline: none;
+    border-color: #0f3f67;
+}
+
+.form input[type="submit"] {
+    background-color: #0f3f67;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #1f4f77;
+}
+
+.req {
+    color: red;
+}
+
+footer {
+    background-color: #0f3f67;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
     .main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        padding: 20px;
     }
-    
-    .left-div {
-        flex: 1;
-        padding: 20px;
-        
-    }
-    
+
+    .left-div,
     .right-div {
-        flex: 1;
-        padding: 20px;
-        text-align: center;
+        flex: 1 1 100%;
     }
-    
-    .img1 {
-        max-width: 100%;
-        height: auto;
-        margin-top: 20px;
+
+    .navbar-nav {
+        flex-direction: column;
     }
-    
-    .Projects {
-        text-align: center;
-        padding: 20px;
+
+    .navbar-nav .nav-link {
+        padding: 1rem;
     }
-    
-    /* Responsive styles */
-    @media (max-width: 768px) {
-        .main {
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .left-div,
-        .right-div {
-            flex: 1 1 100%;
-        }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: left;
     }
-    .span1{
-        color: #0f3f67 ;
+
+    .footer-links {
+        margin-bottom: 10px;
     }
-    
-    .custom-btn {
-        background-color: #0f3f67 !important; /* Change button color */
-        border-color: #0f3f67 !important; /* Change button border color */
-        color: #ffffff !important; /* Change text color */
+
+    .footer-links a {
+        display: block;
+        margin-bottom: 10px;
     }
-    .custom-btn:hover {
-        background-color: #0c324f !important; /* Change button color on hover */
-        border-color: #0c324f !important; /* Change button border color on hover */
-    }
-    .card img:hover{
-        transition: 0.4s;
-       transform: scale(1.03);
-    }
-    
-    
-    .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-    }
-    
-    /* Section heading styles */
-    h2.section-title {
-        color: #333;
-        margin-top: 0;
-    }
-    
-    /* Experience and education item styles */
-    .item {
-        margin-bottom: 20px;
-    }
-    
-    .item h3 {
-        margin-top: 0;
-    }
-    
-    .item p {
-        margin-bottom: 5px;
-    }
-    
-    /* Responsive styles */
-    @media (max-width: 768px) {
-        .container {
-            padding: 10px;
-        }
-    }
-    
-    .form {
-        
-        max-width: 500px; /* Adjusting max-width for responsiveness */
-        margin: 0 auto; /* Centering the form */
-        padding: 20px;
-        background-color: #ffffff; /* Setting background color for form */
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding box shadow for depth */
-    }
-    
-    .form label {
-        font-weight: bold;
-    }
-    
-    .form input[type="text"],
-    .form input[type="email"] {
-        width: calc(100% - 40px); /* Adjusting input width */
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        margin-bottom: 15px;
-    }
-    
-    .form input[type="text"]:focus,
-    .form input[type="email"]:focus {
-        outline: none;
-        border-color: #0f3f67; /* Changing border color on focus */
-    }
-    
-    .form input[type="submit"] {
-        background-color: #0f3f67; /* Setting background color for submit button */
-        color: #ffffff; /* Setting text color for submit button */
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    
-    .form input[type="submit"]:hover {
-        background-color: #1f4f77; /* Darkening the color on hover */
-    }
-    
-    .req {
-        color: red;
-    }
-    body.light{
-     background-color: white;
-     color: black;
-    }
-    body.dark{
-       background-color: black;
-       color: white;
-    }
+}
+/* CSS */
+#testimonial .testimonial-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-item {
+    display: none;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    font-size: 1.2em;
+    color: #333;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 1em;
+}
+
+.testimonial-author {
+    font-size: 1em;
+    color: #666;
+}
